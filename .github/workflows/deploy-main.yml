@@ -1,4 +1,4 @@
-name: CI/CD - Win Loterry
+name: CI/CD - Win_Lottery
 
 on:
   push:
