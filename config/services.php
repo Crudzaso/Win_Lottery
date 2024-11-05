@@ -34,5 +34,12 @@ return [
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
     ],
+    'nequi' => [
+    'api_url' => env('NEQUI_API_URL'),
+    'client_id' => env('NEQUI_CLIENT_ID'),
+    'client_secret' => env('NEQUI_CLIENT_SECRET'),
+    'phone_number' => env('NEQUI_PHONE_NUMBER'),
+    ],
+
 
 ];
