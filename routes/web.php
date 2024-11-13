@@ -11,6 +11,9 @@ use App\Http\Controllers\UserController;
 
 Route::redirect('/', '/dashboard');
 
+
+Route::redirect('/', '/dashboard');
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -29,4 +32,5 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::resource('payments', PaymentController::class);
     Route::resource('users', UserController::class);
 });
+
 

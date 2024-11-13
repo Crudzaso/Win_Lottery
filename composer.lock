@@ -4,11 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
-    "content-hash": "ba2e05193abc3f87f7a753f9691f5fd4",
-=======
-    "content-hash": "a8ad2a404ac17a43ba4a0058386bc52e",
->>>>>>> aa09f24519539cb62d1c9027a5229f8d851a7016
+    "content-hash": "838d07ae4c5d335b6fc6bd7251439c31",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -53,7 +49,41 @@
                     "name": "Ben Scholzen 'DASPRiD'",
                     "email": "mail@dasprids.de",
                     "homepage": "https://dasprids.de/",
-                    "role": "Developer"
+                    "role": "Developer"err: ssh: connect to host github.com port 22: Connection timed out
+                    err: fatal: Could not read from remote repository.
+                    err: Please make sure you have the correct access rights
+                    err: and the repository exists.
+                    err: ssh: connect to host github.com port 22: Connection timed out
+                    err: fatal: Could not read from remote repository.
+                    err: Please make sure you have the correct access rights
+                    err: and the repository exists.
+                    err: In JsonFile.php line 381:
+                    err:                                                                     
+                    err:   "./composer.lock" does not contain valid JSON                     
+                    err:   Parse error on line 6:                                            
+                    err:   ...tomatically"    ],<<<<<<< HEAD    "co                          
+                    err:   --------------------^                                             
+                    err:   Expected: 'STRING' - It appears you have an extra trailing comma  
+                    err:                                                                     
+                    err: install [--prefer-source] [--prefer-dist] [--prefer-install PREFER-INSTALL] [--dry-run] [--download-only] [--dev] [--no-suggest] [--no-dev] [--no-autoloader] [--no-progress] [--no-install] [--audit] [--audit-format AUDIT-FORMAT] [-v|vv|vvv|--verbose] [-o|--optimize-autoloader] [-a|--classmap-authoritative] [--apcu-autoloader] [--apcu-autoloader-prefix APCU-AUTOLOADER-PREFIX] [--ignore-platform-req IGNORE-PLATFORM-REQ] [--ignore-platform-reqs] [--] [<packages>...]
+                    out: Generating optimized autoload files
+                    err: Class App\Models\Transaction located in ./app/Models/transaction.php does not comply with psr-4 autoloading standard (rule: App\ => ./app). Skipping.
+                    err: > Illuminate\Foundation\ComposerScripts::postAutoloadDump
+                    err: > @php artisan package:discover --ansi
+                    out: In AppServiceProvider.php line 22:
+                    out:                                        
+                    out:   syntax error, unexpected token "<<"  
+                    out:                                        
+                    err: Script @php artisan package:discover --ansi handling the post-autoload-dump event returned with error code 1
+                    out: In AppServiceProvider.php line 22:
+                    out:                                        
+                    out:   syntax error, unexpected token "<<"  
+                    out:                                        
+                    out: In AppServiceProvider.php line 22:
+                    out:                                        
+                    out:   syntax error, unexpected token "<<"  
+                    out:                                        
+                    2024/11/08 23:20:53 Process exited with status 1
                 }
             ],
             "description": "BaconQrCode is a QR code generator for PHP.",
@@ -81,19 +111,41 @@
             "require": {
                 "php": "^8.1"
             },
-            "require-dev": {
-                "php-coveralls/php-coveralls": "^2.2",
-                "phpunit/phpunit": "^10.1",
-                "vimeo/psalm": "5.16.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Brick\\Math\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
+            "require-dev": {err: ssh: connect to host github.com port 22: Connection timed out
+            err: fatal: Could not read from remote repository.
+            err: Please make sure you have the correct access rights
+            err: and the repository exists.
+            err: ssh: connect to host github.com port 22: Connection timed out
+            err: fatal: Could not read from remote repository.
+            err: Please make sure you have the correct access rights
+            err: and the repository exists.
+            err: In JsonFile.php line 381:
+            err:                                                                     
+            err:   "./composer.lock" does not contain valid JSON                     
+            err:   Parse error on line 6:                                            
+            err:   ...tomatically"    ],<<<<<<< HEAD    "co                          
+            err:   --------------------^                                             
+            err:   Expected: 'STRING' - It appears you have an extra trailing comma  
+            err:                                                                     
+            err: install [--prefer-source] [--prefer-dist] [--prefer-install PREFER-INSTALL] [--dry-run] [--download-only] [--dev] [--no-suggest] [--no-dev] [--no-autoloader] [--no-progress] [--no-install] [--audit] [--audit-format AUDIT-FORMAT] [-v|vv|vvv|--verbose] [-o|--optimize-autoloader] [-a|--classmap-authoritative] [--apcu-autoloader] [--apcu-autoloader-prefix APCU-AUTOLOADER-PREFIX] [--ignore-platform-req IGNORE-PLATFORM-REQ] [--ignore-platform-reqs] [--] [<packages>...]
+            out: Generating optimized autoload files
+            err: Class App\Models\Transaction located in ./app/Models/transaction.php does not comply with psr-4 autoloading standard (rule: App\ => ./app). Skipping.
+            err: > Illuminate\Foundation\ComposerScripts::postAutoloadDump
+            err: > @php artisan package:discover --ansi
+            out: In AppServiceProvider.php line 22:
+            out:                                        
+            out:   syntax error, unexpected token "<<"  
+            out:                                        
+            err: Script @php artisan package:discover --ansi handling the post-autoload-dump event returned with error code 1
+            out: In AppServiceProvider.php line 22:
+            out:                                        
+            out:   syntax error, unexpected token "<<"  
+            out:                                        
+            out: In AppServiceProvider.php line 22:
+            out:                                        
+            out:   syntax error, unexpected token "<<"  
+            out:                                        
+            2024/11/08 23:20:53 Process exited with status 1
                 "MIT"
             ],
             "description": "Arbitrary-precision arithmetic library",
@@ -4054,16 +4106,16 @@
         },
         {
             "name": "spatie/laravel-permission",
-            "version": "6.9.0",
+            "version": "6.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-permission.git",
-                "reference": "fe973a58b44380d0e8620107259b7bda22f70408"
+                "reference": "8bb69d6d67387f7a00d93a2f5fab98860f06e704"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/fe973a58b44380d0e8620107259b7bda22f70408",
-                "reference": "fe973a58b44380d0e8620107259b7bda22f70408",
+                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/8bb69d6d67387f7a00d93a2f5fab98860f06e704",
+                "reference": "8bb69d6d67387f7a00d93a2f5fab98860f06e704",
                 "shasum": ""
             },
             "require": {
@@ -4074,6 +4126,7 @@
                 "php": "^8.0"
             },
             "require-dev": {
+                "larastan/larastan": "^1.0|^2.0",
                 "laravel/passport": "^11.0|^12.0",
                 "orchestra/testbench": "^6.23|^7.0|^8.0|^9.0",
                 "phpunit/phpunit": "^9.4|^10.1"
@@ -4124,7 +4177,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-permission/issues",
-                "source": "https://github.com/spatie/laravel-permission/tree/6.9.0"
+                "source": "https://github.com/spatie/laravel-permission/tree/6.10.1"
             },
             "funding": [
                 {
@@ -4132,7 +4185,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-06-22T23:04:52+00:00"
+            "time": "2024-11-08T18:45:41+00:00"
         },
         {
             "name": "symfony/clock",
