@@ -25,6 +25,12 @@
                 <x-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="current-password" />
             </div>
 
+            <div class="mt-4">
+                <a href="{{ route('auth.google') }}" class="text-white bg-blue-500 p-2 rounded-lg">
+                    {{ __('Login with Google')}}
+                </a>                
+            </div>
+
             <div class="block mt-4">
                 <label for="remember_me" class="flex items-center">
                     <x-checkbox id="remember_me" name="remember" />
