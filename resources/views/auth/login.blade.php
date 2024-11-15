@@ -27,7 +27,7 @@
 
             <div class="mt-4">
                 <a href="{{ route('auth.google') }}" class="text-white bg-blue-500 p-2 rounded-lg">
-                    {{ __('Login with Google') }}
+                    {{ __('Login with Google')}}
                 </a>                
             </div>
 
