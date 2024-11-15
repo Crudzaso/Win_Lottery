@@ -26,7 +26,7 @@ Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallba
     //Endpoints de las rifas (reconvenir estos nombres luego)
 Route::get('/dashboard/raffles', [RaffleController::class, 'index'])->name('raffles.index');
 Route::get('/dashboard/raffles/myraffles/{$userID}', [RaffleController::class, 'index'])->name('raffles.show.myraffles');
-Roiute::post('/raffles/create', [RaffleController::class, 'create'])->name('raffles.create');
+Route::post('/raffles/create', [RaffleController::class, 'create'])->name('raffles.create');
 Route::put('/raffles/update/{$id}', [RaffleController::class, 'update'])->name('raffles.update');
 Route::delete('/raffles/{$id}', [RaffleController::class, 'destroy'])->name('raffles.destroy');
 
