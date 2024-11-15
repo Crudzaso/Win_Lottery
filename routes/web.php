@@ -8,7 +8,7 @@ use App\Http\Controllers\UserController;
 
 Route::redirect('/', '/dashboard');
 
-// Rutas autenticadas con Jetstream
+    // Rutas autenticadas con Jetstream
 Route::middleware([
     'auth:sanctum',  // Middleware para verificar que el usuario está autenticado
     config('jetstream.auth_session'),
@@ -19,6 +19,19 @@ Route::middleware([
     })->name('dashboard');
 });
 
-// Rutas para iniciar sesión con Google
+    // Rutas para iniciar sesión con Google
 Route::get('auth/google', [GoogleController::class, 'redirectToGoogle'])->name('auth.google');
 Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
+
+    //Endpoints de las rifas (reconvenir estos nombres luego)
+Route::get('/dashboard/raffles', [RaffleController::class, 'index'])->name('raffles.index');
+Route::get('/dashboard/raffles/myraffles/{$userID}', [RaffleController::class, 'index'])->name('raffles.show.myraffles');
+Roiute::post('/raffles/create', [RaffleController::class, 'create'])->name('raffles.create');
+Route::put('/raffles/update/{$id}', [RaffleController::class, 'update'])->name('raffles.update');
+Route::delete('/raffles/{$id}', [RaffleController::class, 'destroy'])->name('raffles.destroy');
+
+    //Endpoints de los tickets (reconvenir estos nombres luego)
+Route::post('/ticket/create', [TicketController::class, 'create'])->name('ticket.create');
+Route::post('/ticket/purchase/{$ticketID}/{$ticketNumber}/{$raffleID}', [TicketController::class, 'store'])->name('ticket.purchase');
+Route::get('/ticket/{$raffleID}', [TicketController::class, 'show'])->name('ticket.show');
+Route::put('/ticket/{$id}', [TicketController::class, 'update'])->name('ticket.update');
