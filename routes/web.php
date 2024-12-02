@@ -22,3 +22,6 @@ Route::middleware([
 // Rutas para iniciar sesión con Google
 Route::get('auth/google', [GoogleController::class, 'redirectToGoogle'])->name('auth.google');
 Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
+
+Route::middleware('auth:sanctum')->group(function () {
+});
