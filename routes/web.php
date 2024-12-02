@@ -3,9 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\GoogleController;
 
+
 Route::redirect('/', '/dashboard');
 
-    // Rutas autenticadas con Jetstream
+// Rutas autenticadas con Jetstream
 Route::middleware([
     'auth:sanctum',  // Middleware para verificar que el usuario está autenticado
     config('jetstream.auth_session'),
@@ -16,9 +17,9 @@ Route::middleware([
     })->name('dashboard');
 });
 
-    // Rutas para iniciar sesión con Google
-Route::get('auth/google', [GoogleController::class, 'redirectToGoogle'])->name('auth.google');
-Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
-
-Route::middleware('auth:sanctum')->group(function () {
+   // Rutas para iniciar sesión con Google
+   Route::get('auth/google', [GoogleController::class, 'redirectToGoogle'])->name('auth.google');
+   Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
+   
+   Route::middleware('auth:sanctum')->group(function () {
 });

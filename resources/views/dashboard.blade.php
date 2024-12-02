@@ -1,6 +1,6 @@
 <x-app-layout>
     <x-slot name="header">
-       <x-calendar>
+        <x-calendar />
     </x-slot>
 
     <div class="py-12">
