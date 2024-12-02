@@ -121,7 +121,7 @@
     </div>
 
     <div class="Raffle-calculator">
-      <h2 class="Raffle-title">PRUEBA TU RIFA Y VE LAS GANANCIAS</h2>
+      <h2 class="Raffle-title">PRUEBA TU RIFAS Y VE LAS GANANCIAS</h2>
       <RaffleCalculator />
     </div>
 
@@ -215,9 +215,7 @@ export default {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  /* Oculta contenido fuera del área del contenedor */
   animation: slide-up 2s ease-in-out;
-  /* Aplica la animación */
 }
 
 
@@ -238,14 +236,11 @@ export default {
 
   to {
     transform: translateY(0);
-    /* Termina en su posición original */
     opacity: 1;
-    /* Se hace visible */
   }
 }
 
 
-/* Estilos para el SVG */
 .svg-container {
   width: 100%;
   background-color: #ffffff;
@@ -271,19 +266,13 @@ svg {
   margin-left: 30%;
   width: 500px;
   height: auto;
-  /* Mantiene la proporción automáticamente */
 }
 
 .img-container img {
   margin-left: 23%;
   width: 70%;
-  /* Escala la imagen para llenar el contenedor */
   height: auto;
-  /* Mantiene la proporción de la imagen */
   display: block;
-
-
-  /* Elimina espacios no deseados en el contenedor */
 }
 
 .carrusel-section {
@@ -296,20 +285,14 @@ svg {
   position: relative;
   top: -12%;
   display: flex;
-  /* Utiliza flexbox */
   justify-content: center;
-  /* Centra horizontalmente */
   height: 100vh;
-  /* La altura del contenedor es el 100% de la ventana */
 }
 
 iframe {
   max-width: 100%;
-  /* Asegura que el iframe sea responsivo */
   max-height: 100%;
-  /* Ajusta la altura en pantallas pequeñas */
   border: none;
-  /* Remueve el borde del iframe */
 }
 
 
