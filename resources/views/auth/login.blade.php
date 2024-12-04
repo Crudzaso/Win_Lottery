@@ -27,7 +27,7 @@
 
             <div class="mt-4">
                 <a href="{{ route('auth.google') }}" class="text-white bg-blue-500 p-2 rounded-lg">
-                    {{ __('Login with Google')}}
+                    {{ __('Login with Google') }}
                 </a>                
             </div>
 
@@ -50,5 +50,14 @@
                 </x-button>
             </div>
         </form>
+
+        <div class="mt-4 text-center">
+            <p class="text-sm text-gray-600">
+                {{ __('Don\'t have an account?') }}
+                <a href="{{ route('register') }}" class="text-blue-500 underline">
+                    {{ __('Register') }}
+                </a>
+            </p>
+        </div>
     </x-authentication-card>
 </x-guest-layout>
