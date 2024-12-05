@@ -56,7 +56,6 @@ class GoogleController extends Controller
             // Despachar el evento de inicio de sesión
             event(new UserLogin(Auth::user()));
             
-
             // Redirigir al dashboard con la ruta nombrada
             return redirect()->route('dashboard');
             
@@ -66,3 +65,4 @@ class GoogleController extends Controller
         }
     }
 }
+
