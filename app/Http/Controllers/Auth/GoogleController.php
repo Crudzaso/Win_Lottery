@@ -24,10 +24,12 @@ class GoogleController extends Controller
         try {
             // Intentamos obtener el usuario de Google
             $user = Socialite::driver('google')->user();
+
             // Verificamos si la información del usuario es válida
             if (is_null($user)) {
                 return redirect('/login')->withErrors(['message' => 'No se pudo obtener la información del usuario de Google.']);
             }
+
             // Validar que el correo esté presente
             if (!$user->getEmail()) {
                 return redirect('/login')->withErrors(['message' => 'No se pudo obtener el email de Google.']);
@@ -35,6 +37,7 @@ class GoogleController extends Controller
 
             // Buscar un usuario existente con ese correo
             $existingUser = User::where('email', $user->getEmail())->first();
+
             if ($existingUser) {
                 // Si el usuario existe, iniciar sesión
                 Auth::login($existingUser);
@@ -49,6 +52,7 @@ class GoogleController extends Controller
                 event(new UserCreated(Auth::user()));
                 Auth::login($newUser);
             }
+
             // Despachar el evento de inicio de sesión
             event(new UserLogin(Auth::user()));
             
@@ -61,3 +65,4 @@ class GoogleController extends Controller
         }
     }
 }
+
