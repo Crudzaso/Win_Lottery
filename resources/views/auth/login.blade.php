@@ -50,5 +50,15 @@
                 </x-button>
             </div>
         </form>
+
+        <div class="mt-4 text-center">
+            <p class="text-sm text-gray-600">
+                {{ __('Don\'t have an account?') }}
+                <a href="{{ route('register') }}" class="text-blue-500 underline">
+                    {{ __('Register') }}
+                </a>
+            </p>
+        </div>
+        
     </x-authentication-card>
 </x-guest-layout>
