@@ -28,7 +28,7 @@
             </div>  
 
             <label>
-                <input required type="email" class="input" name="email" :value="old('email')" placeholder="">
+                <input required type="email" class="input" name="username" :value="old('username')" placeholder="">
                 <span>Email</span>
             </label>
 
